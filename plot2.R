@@ -1,4 +1,4 @@
-# Check if file exists in working directory. Else download
+# Check if file exists in working directory. Else download 
 dlZip <- "household_power_consumption.zip"
 dlTxt <- "household_power_consumption.txt"
 
@@ -39,7 +39,7 @@ days <- strptime(paste(hpcDate$"Date",hpcDate$"Time", sep = " "),format = '%d/%m
 png("plot2.png")
 
 # Plot.
-plot(days,hpcDate[,3], type="l", ylab="Global Active Power (kilowatts)", xlab="")
+plot(days,hpcDate[,3], type="l", ylab="Global Active Power (kilowatts) ", xlab="")
 
 # close the device
 dev.off()

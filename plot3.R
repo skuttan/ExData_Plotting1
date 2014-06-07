@@ -1,4 +1,4 @@
-# Check if file exists in working directory. Else download
+# Check if file exists in working directory. Else download 
 dlZip <- "household_power_consumption.zip"
 dlTxt <- "household_power_consumption.txt"
 
@@ -38,7 +38,7 @@ days <- strptime(paste(hpcDate$"Date",hpcDate$"Time", sep = " "),format = '%d/%m
 # open png device
 png("plot3.png")
 
-plot(days,hpcDate[,7], type="l", ylab="Energy sub metering",xlab="")
+plot(days,hpcDate[,7], type="l", ylab="Energy sub metering ",xlab="")
 par(new=T)
 plot(days,hpcDate[,8], type="l", ylab="Energy sub metering", axes=F, col="red", ylim=c(0,30),,xlab="")
 par(new=T)

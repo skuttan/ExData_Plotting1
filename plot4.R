@@ -1,4 +1,4 @@
-# Check if file exists in working directory. Else download
+# Check if file exists in working directory. Else download 
 dlZip <- "household_power_consumption.zip"
 dlTxt <- "household_power_consumption.txt"
 
@@ -58,7 +58,7 @@ legend("topright",cex=0.7,lty=1,col=c("black","blue","red"),legend=c(colnames(hp
 par(new=F)
 
 # Plot Global Reactive Power
-plot(days,hpcDate[,4], type="l", ylab="Global_reactive_power",xlab="datetime")
+plot(days,hpcDate[,4], type="l", ylab="Global_reactive_power ",xlab="datetime")
 
 # close the device
 dev.off()

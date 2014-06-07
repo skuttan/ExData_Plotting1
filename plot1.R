@@ -1,4 +1,4 @@
-# Check if file exists in working directory. Else download
+# Check if file exists in working directory. Else download 
 dlZip <- "household_power_consumption.zip"
 dlTxt <- "household_power_consumption.txt"
 
@@ -35,7 +35,7 @@ hpcDate <- hpc[which(hpc$"Date" %in% c("1/2/2007", "2/2/2007")),]
 png("plot1.png")
 
 # Hist function
-hist(hpcDate$"Global_active_power", col="red", ylim = c(0,1200), main="Global Active Power", xlab="Global Active Power (kilowatts)")
+hist(hpcDate$"Global_active_power", col="red", ylim = c(0,1200), main="Global Active Power ", xlab="Global Active Power (kilowatts)")
 
 # close the device
 dev.off()
